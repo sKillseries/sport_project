@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+import time
+from termcolor import colored
+
 # Determination metabolisme base par équation
 #Calcul metabolisme basal homme kcal
 # 66,5 + (13.75 x poids en kg) + (5 x taille en cm) - (6.77 x age)
@@ -8,7 +11,7 @@ def homme():
     taille = input("Veuillez saisir votre taille en cm: ")
     age = input("Veuillez saisir votre age: ")
     metabolismebase = 66.5 + (13.75 * int(poids)) + (5 * int(taille)) - (6.77 * int(age))
-    print(f"Votre métabolisme de base en kcal est de: {metabolismebase}")
+    print(colored(f"Votre métabolisme de base en kcal est de: {metabolismebase}", "green"))
 
 # Détermination de dépense énergétique totale
     print(
@@ -27,26 +30,35 @@ def homme():
 # metabolisme de base x coefficent d'activité
     if activite == "1":
         coeffactivite = metabolismebase * 1
-        print(f"Votre dépense journalière est de: {coeffactivite}")
+        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
+        time.sleep(30)
     elif activite == "2":
         coeffactivite = metabolismebase * 1.2
-        print(f"Votre dépense journalière est de: {coeffactivite}")
+        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
+        time.sleep(30)
     elif activite == "3":
         coeffactivite = metabolismebase * 1.4
-        print(f"Votre dépense journalière est de: {coeffactivite}")
+        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
+        time.sleep(30)
     elif activite == "4":
         coeffactivite = metabolismebase * 1.6
-        print(f"Votre dépense journalière est de: {coeffactivite}")
+        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
+        time.sleep(30)
     elif activite == "5":
         coeffactivite = metabolismebase * 1.7
-        print(f"Votre dépense journalière est de: {coeffactivite}")
+        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
+        time.sleep(30)
     elif activite == "6":
         coeffactivite = metabolismebase * 1.8
-        print(f"Votre dépense journalière est de: {coeffactivite}")
+        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
+        time.sleep(30)
+    elif activite == "7":
         coeffactivite = metabolismebase * 2
-        print(f"Votre dépense journalière est de: {coeffactivite}")
+        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
+        time.sleep(30)
     else:
         print("Demande incomprise fermeture du programme...")
+        time.sleep(5)
         exit(0)
 
 #calcul metabolisme basal femme en kcal
@@ -56,7 +68,7 @@ def femme():
     taille = input("Veuillez saisir votre taille en cm: ")
     age = input("Veuillez saisir votre age: ")
     metabolismebase = 655.1 + (9.56 * int(poids)) + (1.85 * int(taille)) - (4.67 * int(age))
-    print(f"Votre métabolisme de base en kcal est de: {metabolismebase}")
+    print(colored(f"Votre métabolisme de base en kcal est de: {metabolismebase}", "green"))
     print(
         """
         Quel est votre niveau d'activité journalier:
@@ -72,31 +84,41 @@ def femme():
     activite = input("Veuillez sélectionnez votre niveau d'activité: ")
     if activite == "1":
         coeffactivite = metabolismebase * 1
-        print(f"Votre dépense journalière est de: {coeffactivite}")
+        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
+        time.sleep(30)
     elif activite == "2":
         coeffactivite = metabolismebase * 1.2
-        print(f"Votre dépense journalière est de: {coeffactivite}")
+        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
+        time.sleep(30)
     elif activite == "3":
         coeffactivite = metabolismebase * 1.4
-        print(f"Votre dépense journalière est de: {coeffactivite}")
+        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
+        time.sleep(30)
     elif activite == "4":
         coeffactivite = metabolismebase * 1.6
-        print(f"Votre dépense journalière est de: {coeffactivite}")
+        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
+        time.sleep(30)
     elif activite == "5":
         coeffactivite = metabolismebase * 1.7
-        print(f"Votre dépense journalière est de: {coeffactivite}")
+        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
+        time.sleep(30)
     elif activite == "6":
         coeffactivite = metabolismebase * 1.8
-        print(f"Votre dépense journalière est de: {coeffactivite}")
+        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
+        time.sleep(30)
+    elif activite == "7":
         coeffactivite = metabolismebase * 2
-        print(f"Votre dépense journalière est de: {coeffactivite}")
+        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
+        time.sleep(30)
     else:
         print("Demande incomprise fermeture du programme...")
+        time.sleep(5)
         exit(0)
 
 def main():
     print(
         """
+        Pour quel sexe voulez calculer la dépense énergétique ?
         > 1: Homme <
         > 2: Femme <
         > q: Quitter <
