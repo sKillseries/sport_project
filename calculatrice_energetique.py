@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 import time
-from termcolor import colored
 
 # Determination metabolisme base par équation
 #Calcul metabolisme basal homme kcal
@@ -11,7 +10,7 @@ def homme():
     taille = input("Veuillez saisir votre taille en cm: ")
     age = input("Veuillez saisir votre age: ")
     metabolismebase = 66.5 + (13.75 * int(poids)) + (5 * int(taille)) - (6.77 * int(age))
-    print(colored(f"Votre métabolisme de base en kcal est de: {metabolismebase}", "green"))
+    print(f"Votre métabolisme de base en kcal est de: {metabolismebase}")
 
 # Détermination de dépense énergétique totale
     print(
@@ -30,32 +29,39 @@ def homme():
 # metabolisme de base x coefficent d'activité
     if activite == "1":
         coeffactivite = metabolismebase * 1
-        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
-        time.sleep(30)
+        print(f"Votre dépense journalière est de: {coeffactivite}")
+        time.sleep(5)
+        remarque()
     elif activite == "2":
         coeffactivite = metabolismebase * 1.2
-        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
-        time.sleep(30)
+        print(f"Votre dépense journalière est de: {coeffactivite}")
+        time.sleep(5)
+        remarque()
     elif activite == "3":
         coeffactivite = metabolismebase * 1.4
-        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
-        time.sleep(30)
+        print(f"Votre dépense journalière est de: {coeffactivite}")
+        time.sleep(5)
+        remarque()
     elif activite == "4":
         coeffactivite = metabolismebase * 1.6
-        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
-        time.sleep(30)
+        print(f"Votre dépense journalière est de: {coeffactivite}")
+        time.sleep(5)
+        remarque()
     elif activite == "5":
         coeffactivite = metabolismebase * 1.7
-        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
-        time.sleep(30)
+        print(f"Votre dépense journalière est de: {coeffactivite}")
+        time.sleep(5)
+        remarque()
     elif activite == "6":
         coeffactivite = metabolismebase * 1.8
-        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
-        time.sleep(30)
+        print(f"Votre dépense journalière est de: {coeffactivite}")
+        time.sleep(5)
+        remarque()
     elif activite == "7":
         coeffactivite = metabolismebase * 2
-        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
-        time.sleep(30)
+        print(f"Votre dépense journalière est de: {coeffactivite}")
+        time.sleep(5)
+        remarque()
     else:
         print("Demande incomprise fermeture du programme...")
         time.sleep(5)
@@ -68,7 +74,7 @@ def femme():
     taille = input("Veuillez saisir votre taille en cm: ")
     age = input("Veuillez saisir votre age: ")
     metabolismebase = 655.1 + (9.56 * int(poids)) + (1.85 * int(taille)) - (4.67 * int(age))
-    print(colored(f"Votre métabolisme de base en kcal est de: {metabolismebase}", "green"))
+    print(f"Votre métabolisme de base en kcal est de: {metabolismebase}")
     print(
         """
         Quel est votre niveau d'activité journalier:
@@ -84,36 +90,58 @@ def femme():
     activite = input("Veuillez sélectionnez votre niveau d'activité: ")
     if activite == "1":
         coeffactivite = metabolismebase * 1
-        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
-        time.sleep(30)
+        print(f"Votre dépense journalière est de: {coeffactivite}")
+        time.sleep(5)
+        remarque()
     elif activite == "2":
         coeffactivite = metabolismebase * 1.2
-        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
-        time.sleep(30)
+        print(f"Votre dépense journalière est de: {coeffactivite}")
+        time.sleep(5)
+        remarque()
     elif activite == "3":
         coeffactivite = metabolismebase * 1.4
-        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
-        time.sleep(30)
+        print(f"Votre dépense journalière est de: {coeffactivite}")
+        time.sleep(5)
+        remarque()
     elif activite == "4":
         coeffactivite = metabolismebase * 1.6
-        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
-        time.sleep(30)
+        print(f"Votre dépense journalière est de: {coeffactivite}")
+        time.sleep(5)
+        remarque()
     elif activite == "5":
         coeffactivite = metabolismebase * 1.7
-        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
-        time.sleep(30)
+        print(f"Votre dépense journalière est de: {coeffactivite}")
+        time.sleep(5)
+        remarque()
     elif activite == "6":
         coeffactivite = metabolismebase * 1.8
-        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
-        time.sleep(30)
+        print(f"Votre dépense journalière est de: {coeffactivite}")
+        time.sleep(5)
+        remarque()
     elif activite == "7":
         coeffactivite = metabolismebase * 2
-        print(colored(f"Votre dépense journalière est de: {coeffactivite}", "blue"))
-        time.sleep(30)
+        print(f"Votre dépense journalière est de: {coeffactivite}")
+        time.sleep(5)
+        remarque()
     else:
         print("Demande incomprise fermeture du programme...")
         time.sleep(5)
         exit(0)
+
+def remarque():
+    print(
+        """
+        Remarque:
+        On pourra ajuster ce résultat de:
+        + 10 % pour des personnes ayant un métabolisme qui brûle beaucoup naturellement (profil plutôt maigre et sec)
+        - 10 % pour des personnes ayant un métabolisme plus qui ont tendance à prendre du poids facilement
+        \n
+        Bilan énergétique:
+        - Si la dépense excède les apports, il y a perte de poids
+        - Si les apports excédent la dépense, il y a prise de poids
+        """
+    )
+    time.sleep(30)
 
 def main():
     print(
