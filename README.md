@@ -1,5 +1,10 @@
 # sport_project
+
 ici seront exposé mes scripts/applications développé par rapport au sport
+
+# Application 1: Calculatrice energetique
+Fonction: Le programme permet de connaitre la dépense énergétique d'un individu par son sexe, taille, poids, age ainsi que ces activités journalières afin de déterminer le nombre de kcal qu'il faut manger.
+Pour se stabiliser, prendre en masse musculaire ou encore pour perdre du poids.
 
 version: Alpha v1.1
 
@@ -13,3 +18,6 @@ Pour le bon fonctionnement de l'application il faut lire et suivre les intructio
 
 ## notice utilisation Windows
 Il suffit de double cliquer sur l'executable calculatrice_energetique.exe
+
+## notice utilisation Mac
+Double cliquer sur l'executable calculatrice_energetique
